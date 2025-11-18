@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UTP Marketplace - Pago</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-inter bg-gray-100 min-h-screen">
+
+  <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto flex items-center justify-between p-4 md:p-6">
+      <h1 class="text-2xl font-bold text-[var(--color-principal)]">UTP<span class="text-[var(--color-secundario)]">Libros</span></h1>
+      <nav class="space-x-6">
+        <a href="index.html" class="text-gray-700 hover:text-[var(--color-principal)]">Inicio</a>
+        <a href="libros.html" class="text-gray-700 hover:text-[var(--color-principal)]">Catálogo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto p-6">
+    <h2 class="text-3xl font-bold mb-4">Finalizar compra</h2>
+
+    <form id="checkoutForm" class="bg-white p-6 rounded-xl shadow space-y-4">
+      <div>
+        <label class="block font-medium mb-1">Nombre completo</label>
+        <input id="c_nombre" class="w-full p-3 border rounded" required>
+      </div>
+
+      <div>
+        <label class="block font-medium mb-1">Correo electrónico</label>
+        <input id="c_correo" type="email" class="w-full p-3 border rounded" required>
+      </div>
+
+      <div>
+        <label class="block font-medium mb-1">Método de pago</label>
+        <select id="checkoutMetodo" class="w-full p-3 border rounded" required>
+          <option value="">Seleccione...</option>
+          <option value="yape">Yape</option>
+          <option value="tarjeta">Tarjeta</option>
+          <option value="paypal">PayPal</option>
+        </select>
+      </div>
+
+      <div id="checkoutPaymentFields"></div>
+
+      <div class="flex justify-between items-center">
+        <div>
+          <p class="text-sm text-gray-600">Total:</p>
+          <p class="text-2xl font-bold text-[var(--color-principal)]" id="checkoutTotal">S/ 0.00</p>
+        </div>
+
+        <button type="submit" class="btn">Confirmar y Pagar</button>
+      </div>
+
+      <p id="checkoutMessage" class="hidden text-green-600 font-semibold"></p>
+    </form>
+  </main>
+
+  <footer class="bg-gray-900 text-white text-center py-6 mt-12">
+    © 2025 UTP Marketplace
+  </footer>
+
+  <script src="js/transaction.js"></script>
+</body>
+</html>

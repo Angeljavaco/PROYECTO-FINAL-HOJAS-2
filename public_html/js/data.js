@@ -1,0 +1,11 @@
+// js/data.js
+const PRODUCT_DATA = [
+  {id: 1, name: "Cálculo Diferencial e Integral", author: "Stewart", price: 25.00, category: "Ingeniería", condition: "Usado", year: 2018, description: "Edición usada, ideal para cursos de primer año. Algunas anotaciones a lápiz.", image: "Imagenes/Calculo Diferencial Steward.png"},
+  {id: 2, name: "Estructura de Datos en Java", author: "Goodrich", price: 40.50, category: "Programación", condition: "Nuevo", year: 2022, description: "Libro clave para aprender algoritmos y estructuras con ejemplos prácticos en Java.", image: "Imagenes/Estructura de Datos en Java.png"},
+  {id: 3, name: "Teoría de la Administración", author: "Robbins", price: 15.00, category: "Negocios", condition: "Intercambio", year: 2015, description: "Perfecto para la facultad de negocios. Se acepta cambio por libro de Economía.", image: "Imagenes/Teoría de la Administración.png"},
+  {id: 4, name: "Física para Científicos e Ingenieros", author: "Serway", price: 35.00, category: "Ingeniería", condition: "Usado", year: 2019, description: "Tomo I y II. Excelente estado de conservación.", image: "Imagenes/Física para Científicos e Ingenieros.png"},
+  {id: 5, name: "Cien Años de Soledad", author: "García Márquez", price: 18.75, category: "Literatura", condition: "Usado", year: 2005, description: "Clásico de la literatura, edición de bolsillo. Vendo por mudanza.", image: "Imagenes/Cien Años de Soledad.png"},
+  {id: 6, name: "Fundamentos de Economía", author: "Mankiw", price: 30.00, category: "Negocios", condition: "Nuevo", year: 2023, description: "Última edición, sin usar. Incluye acceso digital.", image: "Imagenes/Fundamentos de Economía.png"},
+  {id: 7, name: "Algoritmos y Programación en C++", author: "Deitel", price: 22.00, category: "Programación", condition: "Usado", year: 2016, description: "Ideal para la introducción a la programación. Tiene el lomo un poco desgastado.", image: "Imagenes/Algoritmos y Programación.png"},
+  {id: 8, name: "Historia de Panamá", author: "Varios", price: 10.00, category: "Humanidades", condition: "Intercambio", year: 2010, description: "Libro de texto básico para estudios generales.", image: "Imagenes/Historia de Panamá.png"}
+];

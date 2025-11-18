@@ -1,0 +1,33 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
+*/
+/*
+    Created on : 15 nov. 2025, 7:23:04 p. m.
+    Author     : angel
+*/
+// ================================
+// ESTILOS GLOBALES
+// ================================
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fuente;
+    background: $color-fondo;
+    color: $color-texto;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+    border-radius: $radio;
+}
+

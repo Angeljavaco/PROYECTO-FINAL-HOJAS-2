@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - UTP Marketplace</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="bg-gray-50 min-h-screen">
+
+<header class="bg-white shadow-md sticky top-0 z-10">
+    <div class="flex justify-between items-center py-4 px-4 md:px-8">
+        <h1 class="text-2xl font-bold">
+            <span class="text-[var(--color-principal)]">UTP</span><span class="text-[var(--color-secundario)]">Libros</span>
+        </h1>
+
+        <nav class="flex space-x-6 text-gray-600 font-medium">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="carrito.html">Carrito</a>
+        </nav>
+    </div>
+</header>
+
+<main class="p-8">
+
+    <h2 class="text-3xl font-bold mb-8">Catálogo de Libros</h2>
+
+    <div id="filtros"></div>
+    <div id="product-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"></div>
+
+</main>
+
+<footer class="bg-gray-800 text-white mt-12 py-6 text-center text-sm">
+    © 2025 UTP Marketplace.
+</footer>
+
+<script src="productos.js"></script>
+<script src="catalogo.js"></script>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTP Marketplace - Inicio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-50 min-h-screen">
+
+<header class="bg-white shadow-md sticky top-0 z-10">
+    <div class="flex justify-between items-center py-4 px-4 md:px-8">
+        <h1 class="text-2xl font-bold text-gray-800 tracking-tight">
+            <span class="text-[var(--color-principal)]">UTP</span><span class="text-[var(--color-secundario)]">Libros</span>
+        </h1>
+
+        <nav class="flex space-x-6 text-gray-600 font-medium">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="carrito.html">Carrito</a>
+        </nav>
+    </div>
+</header>
+
+<main class="p-8">
+
+    <section class="hero-home rounded-lg mb-10 overflow-hidden">
+        <div class="hero-overlay"></div>
+        <div class="relative z-10 p-6">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-4">
+                Tu biblioteca universitaria en un clic
+            </h2>
+            <p class="text-xl md:text-2xl font-light mb-8">
+                Compra, vende o intercambia libros con estudiantes UTP.
+            </p>
+            <a href="catalogo.html" class="btn-principal text-lg">Ver Catálogo</a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="bg-gray-800 text-white mt-12 py-6 text-center text-sm">
+    © 2025 UTP Marketplace: Intercambio de Libros. Proyecto de Diseño Web.
+</footer>
+<!-- PARTE 2/2 -->
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Encabezado (continuación de tu parte 1) -->
+    <header class="bg-white shadow-md p-4 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <img src="assets/img/logo.png" alt="Logo UTP" class="w-12 h-12">
+            <h1 class="text-xl font-semibold">UTP Marketplace</h1>
+        </div>
+
+        <nav class="flex gap-4 text-sm font-medium">
+            <a href="#" class="hover:text-red-600">Inicio</a>
+            <a href="#" class="hover:text-red-600">Mis Publicaciones</a>
+            <a href="#" class="hover:text-red-600">Perfil</a>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="w-full h-64 bg-cover bg-center flex items-center justify-center"
+             style="background-image: url('assets/img/banner-books.jpg');">
+        <h2 class="text-4xl text-white font-bold drop-shadow-lg">
+            Intercambio y Venta de Libros entre Estudiantes
+        </h2>
+    </section>
+
+    <!-- Contenido principal -->
+    <main class="max-w-6xl mx-auto mt-10 p-4">
+
+        <h2 class="text-2xl font-semibold mb-5">Libros Disponibles</h2>
+
+        <!-- Grid de tarjetas -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <!-- Tarjeta 1 -->
+            <div class="bg-white shadow-md rounded-xl overflow-hidden hover:scale-105 transition cursor-pointer">
+                <img src="assets/img/libro1.jpg" class="w-full h-48 object-cover" alt="Libro 1">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Programación en C++</h3>
+                    <p class="text-gray-600 text-sm mt-1">Autor: Luis Joyanes</p>
+                    <p class="text-red-600 font-bold mt-3">S/ 35</p>
+
+                    <button onclick="openModal('Programación en C++', 35)"
+                            class="mt-4 w-full bg-red-600 text-white p-2 rounded-lg hover:bg-red-700 transition">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="bg-white shadow-md rounded-xl overflow-hidden hover:scale-105 transition cursor-pointer">
+                <img src="assets/img/libro2.jpg" class="w-full h-48 object-cover" alt="Libro 2">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Ingeniería de Software</h3>
+                    <p class="text-gray-600 text-sm mt-1">Autor: Pressman</p>
+                    <p class="text-red-600 font-bold mt-3">S/ 40</p>
+
+                    <button onclick="openModal('Ingeniería de Software', 40)"
+                            class="mt-4 w-full bg-red-600 text-white p-2 rounded-lg hover:bg-red-700 transition">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="bg-white shadow-md rounded-xl overflow-hidden hover:scale-105 transition cursor-pointer">
+                <img src="assets/img/libro3.jpg" class="w-full h-48 object-cover" alt="Libro 3">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Estructuras de Datos</h3>
+                    <p class="text-gray-600 text-sm mt-1">Autor: Lafore</p>
+                    <p class="text-red-600 font-bold mt-3">S/ 30</p>
+
+                    <button onclick="openModal('Estructuras de Datos', 30)"
+                            class="mt-4 w-full bg-red-600 text-white p-2 rounded-lg hover:bg-red-700 transition">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Modal de compra -->
+    <div id="buyModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center p-4">
+        <div class="bg-white w-full max-w-md rounded-xl shadow-lg p-6 relative">
+
+            <h3 class="text-xl font-semibold" id="modalBookTitle"></h3>
+            <p class="text-red-600 font-bold mt-1">Precio: S/ <span id="modalBookPrice"></span></p>
+
+            <label class="block mt-4 font-medium">Método de pago:</label>
+            <select id="paymentMethod" class="w-full border p-2 rounded-md mt-1">
+                <option value="tarjeta">Tarjeta</option>
+                <option value="paypal">PayPal</option>
+            </select>
+
+            <button onclick="confirmPurchase()"
+                    class="w-full bg-red-600 text-white p-2 mt-6 rounded-lg hover:bg-red-700 transition">
+                Confirmar compra
+            </button>
+
+            <!-- Botón cerrar -->
+            <button onclick="closeModal()"
+                    class="absolute top-3 right-3 text-gray-600 hover:text-black text-xl">
+                &times;
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-5 mt-10">
+        <p>© 2025 UTP Marketplace - Proyecto Estudiantil</p>
+    </footer>
+
+    <!-- Script del modal -->
+    <script>
+        function openModal(title, price) {
+            document.getElementById("modalBookTitle").innerText = title;
+            document.getElementById("modalBookPrice").innerText = price;
+            document.getElementById("buyModal").classList.remove("hidden");
+            document.getElementById("buyModal").classList.add("flex");
+        }
+
+        function closeModal() {
+            document.getElementById("buyModal").classList.add("hidden");
+            document.getElementById("buyModal").classList.remove("flex");
+        }
+
+        function confirmPurchase() {
+            const method = document.getElementById("paymentMethod").value;
+
+            if (method === "tarjeta") {
+                alert("Compra realizada con tarjeta. ¡Gracias por tu compra!");
+            } else {
+                alert("Compra realizada con PayPal. ¡Gracias por tu compra!");
+            }
+
+            closeModal();
+        }
+    </script>
+
+</body>
+</html>
+
+</body>
+</html>
+
+
+</body>
+</html>

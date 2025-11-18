@@ -1,0 +1,17 @@
+// ================================
+// NAVBAR
+// ================================
+
+nav {
+    background: #fff;
+    box-shadow: $sombra;
+
+    a {
+        @include transition;
+        font-weight: 500;
+
+        &:hover {
+            color: $color-primario;
+        }
+    }
+}

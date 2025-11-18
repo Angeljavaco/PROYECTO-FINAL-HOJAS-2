@@ -1,0 +1,23 @@
+// ================================
+// TARJETAS (LIBROS, CATEGORÍAS)
+// ================================
+
+.card {
+    @include card-base;
+    @include transition;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, .18);
+    }
+
+    h3 {
+        font-size: 1.3rem;
+        margin-bottom: .5rem;
+    }
+
+    p {
+        color: #555;
+        margin-bottom: .8rem;
+    }
+}

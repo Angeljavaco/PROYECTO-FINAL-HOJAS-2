@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UTP Marketplace - Catálogo</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-inter bg-gray-100 min-h-screen">
+
+  <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto flex items-center justify-between p-4 md:p-6">
+      <h1 class="text-2xl font-bold text-[var(--color-principal)]">UTP<span class="text-[var(--color-secundario)]">Libros</span></h1>
+      <nav class="space-x-6">
+        <a href="index.html" class="text-gray-700 hover:text-[var(--color-principal)]">Inicio</a>
+        <a href="libros.html" class="text-gray-700 hover:text-[var(--color-principal)]">Catálogo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto p-6">
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+      <h2 class="text-3xl font-bold">Libros disponibles</h2>
+
+      <div class="flex gap-3 items-center w-full md:w-auto">
+        <input id="searchInput" type="text" placeholder="Buscar por título o autor..." class="p-3 border rounded w-full md:w-96" />
+        <select id="categoryFilter" class="p-3 border rounded">
+          <option value="all">Todas las categorías</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="librosContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </main>
+
+  <footer class="bg-gray-900 text-white text-center py-6 mt-12">
+    © 2025 UTP Marketplace
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/catalog.js"></script>
+</body>
+</html>

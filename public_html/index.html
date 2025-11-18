@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UTP Marketplace - Inicio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-inter bg-gray-100 min-h-screen">
+
+  <!-- NAV -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto flex items-center justify-between p-4 md:p-6">
+      <h1 class="text-2xl font-bold text-[var(--color-principal)]">UTP<span class="text-[var(--color-secundario)]">Libros</span></h1>
+      <nav class="space-x-6">
+        <a href="index.html" class="text-gray-700 hover:text-[var(--color-principal)]">Inicio</a>
+        <a href="libros.html" class="text-gray-700 hover:text-[var(--color-principal)]">Catálogo</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="max-w-7xl mx-auto p-6">
+    <section class="hero p-8 rounded-xl" style="background-image:url('Imagenes/hero-placeholder.png');">
+      <div class="hero-content">
+        <h2 class="text-4xl md:text-5xl font-extrabold">Tu biblioteca universitaria en un clic</h2>
+        <p class="mt-3 text-lg">Compra, vende o intercambia libros con estudiantes UTP.</p>
+        <div class="mt-6">
+          <a href="libros.html" class="btn">Ver catálogo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORÍAS DESTACADAS (seleccionables) -->
+    <section class="mt-10">
+      <h3 class="text-2xl font-bold mb-4">Categorías destacadas</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <button class="categoria-card" onclick="location.href='libros.html?cat=Programación'">Programación</button>
+        <button class="categoria-card" onclick="location.href='libros.html?cat=Ingeniería'">Ingeniería</button>
+        <button class="categoria-card" onclick="location.href='libros.html?cat=Negocios'">Negocios</button>
+        <button class="categoria-card" onclick="location.href='libros.html?cat=Literatura'">Literatura</button>
+        <button class="categoria-card" onclick="location.href='libros.html?cat=Humanidades'">Humanidades</button>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-white text-center py-6 mt-12">
+    © 2025 UTP Marketplace
+  </footer>
+
+  <script>
+  </script>
+</body>
+</html>

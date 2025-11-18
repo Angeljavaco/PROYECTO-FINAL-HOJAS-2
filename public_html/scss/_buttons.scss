@@ -1,0 +1,33 @@
+// ================================
+// BOTONES CUSTOM
+// ================================
+
+.btn {
+    padding: .75rem 1.5rem;
+    border-radius: $radio;
+    color: #fff;
+    background: $color-primario;
+    font-weight: 600;
+    cursor: pointer;
+    @include transition;
+
+    &:hover {
+        background: $color-secundario;
+    }
+}
+
+.btn-outline {
+    padding: .75rem 1.5rem;
+    border-radius: $radio;
+    color: $color-primario;
+    border: 2px solid $color-primario;
+    font-weight: 600;
+    @include transition;
+    cursor: pointer;
+
+    &:hover {
+        background: $color-primario;
+        color: #fff;
+    }
+}
+

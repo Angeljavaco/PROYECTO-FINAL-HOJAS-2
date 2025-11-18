@@ -1,0 +1,31 @@
+// ================================
+// MIXINS REUTILIZABLES
+// ================================
+
+@mixin card-base {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: $radio;
+    box-shadow: $sombra;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin transition {
+    transition: all .25s ease;
+}
+
+@mixin responsive($size) {
+    @if $size == tablet {
+        @media (max-width: 900px) { @content; }
+    }
+    @if $size == mobile {
+        @media (max-width: 600px) { @content; }
+    }
+}
+
+
