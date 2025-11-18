@@ -1,29 +1,35 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UTP Marketplace - Detalle</title>
+
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <title>Detalle del Producto</title>
 </head>
+<body class="font-inter bg-gray-100 min-h-screen">
 
-<body>
-<header class="p-4 bg-blue-900 text-white">
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="productos.html">Productos</a>
-      <a href="carrito.html">Carrito</a>
-    </nav>
-</header>
+  <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto flex items-center justify-between p-4 md:p-6">
+      <h1 class="text-2xl font-bold text-[var(--color-principal)]">UTP<span class="text-[var(--color-secundario)]">Libros</span></h1>
+      <nav class="space-x-6">
+        <a href="index.html" class="text-gray-700 hover:text-[var(--color-principal)]">Inicio</a>
+        <a href="libros.html" class="text-gray-700 hover:text-[var(--color-principal)]">Catálogo</a>
+      </nav>
+    </div>
+  </header>
 
-<div class="w-8/12 mx-auto my-10" id="detalle"></div>
+  <main class="max-w-6xl mx-auto p-6">
+    <div id="detalleContainer"></div>
+  </main>
 
-<script src="js/productos.js"></script>
-<script src="js/detalle.js"></script>
+  <footer class="bg-gray-900 text-white text-center py-6 mt-12">
+    © 2025 UTP Marketplace
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/detail.js"></script>
 </body>
 </html>
-
